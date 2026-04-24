@@ -41,6 +41,12 @@
                             <div class="text-sm font-semibold text-gray-800">{{ $product->name }}</div>
                         </div>
 
+                        {{-- Category --}}
+                        <div class="flex items-center px-5 py-4">
+                            <div class="w-32 shrink-0 text-sm font-medium text-gray-500">Category</div>
+                            <div class="text-sm text-gray-800">{{ $product->category->name ?? '-' }}</div>
+                        </div>
+
                         {{-- Quantity --}}
                         <div class="flex items-center px-5 py-4">
                             <div class="w-32 shrink-0 text-sm font-medium text-gray-500">Quantity</div>

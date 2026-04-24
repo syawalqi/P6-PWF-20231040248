@@ -40,6 +40,7 @@
                                 <tr>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider w-8">#</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Name</th>
+                                    <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Category</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Quantity</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Price</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Owner</th>
@@ -54,6 +55,9 @@
                                         </td>
                                         <td class="px-6 py-4 font-medium text-gray-800">
                                             {{ $product->name }}
+                                        </td>
+                                        <td class="px-6 py-4 text-gray-600">
+                                            {{ $product->category->name ?? '-' }}
                                         </td>
                                         <td class="px-6 py-4 text-gray-600">
                                             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium 
